@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>TP Grupo 4</title>
+
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- vinculación fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/0501813ee5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header class="header">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div id="logo">
+          <a href="/">
+            <i class="fa-solid fa-book"></i>
+            <span class="logo-text">CAC - Libros</span>
+          </a>
+        </div>
+
+        <!-- hipervínculos del menú -->
+        <ul class="nav-links">
+          <li><a href="#popular">Tendencias</a></li>
+          <li>
+            <a href="./templates/register.html" class="btn-cac">Registrarse</a>
+          </li>
+          <li>
+            <a href="./templates/login.html">
+              <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+              <!-- <i class="fas fa-sign-in-alt"></i> -->
+              <i class="fas fa-sign-in-alt"></i>
+              <span class="login-text">Iniciar Sesión</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main>
+      <!-- banner: una sección prominente en la 
+            parte superior de una página que puede
+            contener información destacada, como anuncios,
+            mensajes importantes, o un diseño gráfico distintivo. -->
+      <section id="banner" class="d-flex">
+        <div class="card-banner banner-container">
+          <h1>
+            Biblioteca online!! <br />
+            novelas, policiales, y mucho mas...
+          </h1>
+          <h2>
+            Leelos donde y como quieras! <br />
+            descarga gratis!
+          </h2>
+          <a href="./templates/register.html" class="btn">Registrate</a>
+        </div>
+      </section>
+
+      <!-- search: sección que contiene un mensaje de búsqueda
+            y un campo de entrada de texto para que los usuarios
+            ingresen lo que desean buscar en un sitio web
+            -->
+      <section id="search" class="container">
+        <h2 class="search-title">¿Qué estas buscando leer?</h2>
+        <input type="text" class="input-search" placeholder="Buscar..." />
+      </section>
+
+      <div style="border: 1px solid #fff; margin: 2em"></div>
+
+      <!-- popular: mostrar imágenes de las peliculas
+            con tendencia hoy -->
+      <section id="popular">
+        <!-- División contenedora del titulo
+                e imagenes -->
+        <div class="container" class="movies-grid">
+          <h2>Las tendencias de hoy</h2>
+
+          <div id="list-popular" class="container-group">
+            <!-- División que mostrará imagen y detalle de la pelicula, mismo 
+                    formato para todas las peliculas -->
+            <!-- pelicula 01 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen1.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">LA PROMESA (PECADO 1)</p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Laura Restrepo
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 02 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen2.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">LA GRAN NEVADA</p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Centeno Holden
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 03 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen3.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">A PASO LENTO</p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Igor de Amicis
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 04 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen4.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">
+                    ENCUÉNTRAME (UN PUÑADO DE ESPERANZAS 2 - ENTREGA 1)
+                  </p>
+                  <p class="movie-item-detail-subtitle">Autor: Irene Mendoza</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 05 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen5.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">
+                    QUE LA MUERTE TE ACOMPAÑE (1ER CAPÍTULO)
+                  </p>
+                  <p class="movie-item-detail-subtitle">Autor: Risto Mejide</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 06 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen6.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">
+                    NUNCA LO OLVIDARÁS (RELATO PRECUELA) (TRILOGÍA CORAZÓN 0)
+                  </p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Elena Montagud
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 07 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen7.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">
+                    ALGUNAS COSAS QUE DEBERÍAS SABER SOBRE LA SOCIEDAD JULIETTE
+                  </p>
+                  <p class="movie-item-detail-subtitle">Autor: Sasha Grey</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 08 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen8.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">
+                    EL HORÓSCOPO DE GUÍA ASTROLÓGICA PARA CORAZONES ROTOS
+                  </p>
+                  <p class="movie-item-detail-subtitle">Autor: Silvia Zucca</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 09 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen9.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">
+                    UN LUGAR SOBRE EL ARCOÍRIS
+                  </p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Miguel De Leon
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 10 -->
+            <div class="movie-item">
+              <a href="./templates/detail-movie.html" class="movie-item">
+                <img
+                  src="./static/img/imagen10.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">
+                    EL COLOQUIO DE LOS PERROS (FLASH RELATOS)
+                  </p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Miguel de Cervantes
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- top-rated: mostrar las películas más aclamadas-->
+      <section id="top-rated">
+        <!-- División contenedora del titulo
+                e imagenes -->
+        <div class="container">
+          <h2>Las más aclamadas.</h2>
+          <!-- Div para mostrar todas las imagenes e info 
+                        de las películas -->
+          <div id="list-top-rated" class="container-group">
+            <!-- Info de las películas mismo formato para todas -->
+            <!-- pelicula 01 -->
+            <div class="movie-item">
+              <div class="wrapper">
+                <img
+                  src="./static/img/imagen11.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+              </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">MARÍA DOS PRAZERES</p>
+                <p class="movie-item-detail-subtitle">
+                  Autor: Gabriel García Marquez
+                </p>
+              </div>
+            </div>
+
+            <!-- pelicula 02 -->
+            <div class="movie-item">
+              <div class="wrapper">
+                <img
+                  src="./static/img/imagen12.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+              </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  ESCRIBE, UN CUENTO DE NAVIDAD SOBRE EL PODER DE LOS LIBROS
+                </p>
+                <p class="movie-item-detail-subtitle">Autor: Centeno Holden</p>
+              </div>
+            </div>
+
+            <!-- pelicula 03 -->
+            <div class="movie-item">
+              <div class="wrapper">
+                <img
+                  src="./static/img/imagen13.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+              </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">FANTASÍA (FLASH RELATOS)</p>
+                <p class="movie-item-detail-subtitle">
+                  Autor: Pardo Bazan Emilia
+                </p>
+              </div>
+            </div>
+
+            <!-- pelicula 04 -->
+            <div class="movie-item">
+              <div class="wrapper">
+                <img
+                  src="./static/img/imagen14.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+              </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  MUTATIS MUTANDIS (VERSOS, CANCIONES Y TROCITOS DE CARNE [SPIN
+                  OFF])
+                </p>
+                <p class="movie-item-detail-subtitle">
+                  Autor: Perez Gellida Cesar
+                </p>
+              </div>
+            </div>
+
+            <!-- pelicula 05 -->
+            <div class="movie-item">
+              <div class="wrapper">
+                <img
+                  src="./static/img/imagen15.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+              </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">LO QUE ESCONDÍAN SUS OJOS</p>
+                <p class="movie-item-detail-subtitle">Autor: Nieves Herrero</p>
+              </div>
+            </div>
+
+            <!-- pelicula 06 -->
+            <div class="movie-item">
+              <div class="wrapper">
+                <img
+                  src="./static/img/imagen1.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+              </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">LA PROMESA (PECADO 1)</p>
+                <p class="movie-item-detail-subtitle">Autor: Laura Restrepo</p>
+              </div>
+            </div>
+
+            <!-- pelicula 07 -->
+            <div class="movie-item">
+              <div class="wrapper">
+                <img
+                  src="./static/img/imagen2.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+              </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">LA GRAN NEVADA</p>
+                <p class="movie-item-detail-subtitle">Autor: Centeno Holden</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <a href="" class="footer-link">Términos y condiciones</a>
+      <a href="" class="footer-link">Preguntas Frecuentes</a>
+      <a href="" class="footer-link">Ayuda</a>
+    </footer>
+  </body>
+</html>

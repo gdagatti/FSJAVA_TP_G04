@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style_register.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    
+    <title>TP Grupo 4</title>
+
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    
+
+    <!-- vinculación fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/0501813ee5.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+<body class="body_login">
+
+    <header class="header_registro">
+        <nav class="navbar_registro">
+            <a clas="logo_registro" href="../index.html">
+                <i class="fa-solid fa-book"></i>
+                <span> CAC-Libros</span> 
+            </a>
+        </nav>
+    </header>
+
+    <main id="main" class="main">
+        <section class="login" id="form-wrapper">
+            <!-- FORMULARIO-->
+            <form action="#" method="POST" novalidate id="form_registro">
+                <h2 class="titulo_registro">Ingrese al sitio</h2>
+
+                <!--CAMPOS PARA VALIDAR USUARIO-->
+                <div class="form-control">
+                    <label for="email" class="lavel_registro">Email</label>
+                    <input type="email" name="email" required id="email">
+                </div>
+                <div class="form-control">
+                    <label for="passw"class="lavel_registro">Contraseña</label>
+                    <input type="password" name="passw" required id="passw">
+                </div>
+                <!--BOTON DE ACCIÓN-->
+                <button type="submit" class="boton_login">Ingresar</button>
+
+                <!--ZONA DE AYUDA-->
+                <div class="ayuda_form">
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <br><br>
+        <a href="#" class="footer-link" >Términos y condiciones</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="footer-link">Preguntas frecuentes</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="footer-link">Ayuda</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="footer-link">Administrador de Libros</a>
+        <br><br>
+    </footer>
+    <!-- este codigo genera espacios en blanco para generar una separación=> &nbsp; -->
+
+</body>
+
+</html>
