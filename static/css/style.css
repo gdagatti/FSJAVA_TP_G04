@@ -133,7 +133,7 @@ header {
   justify-content: space-around;
   align-items: center;
   /*height: 100%;*/
-  background-color: lightblue;
+  background-color: var(--bg-primary-color);
 }
 
 .movie-item {
@@ -268,23 +268,22 @@ footer {
 
 /* Media queries */
 
-@media only screen and (max-width:600px){
-  .container{
-      flex-direction: column;
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
   }
-  .movie-item{
-      height: auto;
-      width: 50%;
+  .movie-item {
+    height: auto;
+    width: 50%;
   }
 }
 
 /* desde 601px hasta 935px */
 
-@media only screen and (min-width:601px) and (max-width:935px) {
-    .movie-item{
+@media only screen and (min-width: 601px) and (max-width: 935px) {
+  .movie-item {
     display: flex;
     height: auto;
     width: 200;
-      
   }
 }

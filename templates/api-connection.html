@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--  -->
+<!-- este html esta destinado para la coneccion con la api de rick and morty -->
+<!--  -->
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -23,7 +26,7 @@
     ></script>
   </head>
 
-  <body class="body_registro">
+  <body class="body_login">
     <header class="header_registro">
       <nav class="navbar_registro">
         <a clas="logo_registro" href="../index.html">
@@ -34,19 +37,12 @@
     </header>
 
     <main id="main" class="main">
-      <section class="registro" id="form-wrapper">
+      <section class="login" id="form-wrapper">
         <!-- FORMULARIO-->
         <form action="#" method="POST" novalidate id="form_registro">
-          <h2 class="titulo_registro">Registro</h2>
-          <!--CAMPOS-->
-          <div class="form-control">
-            <label class="lavel_registro" for="name">Nombre</label>
-            <input type="text" name="name" required id="name" />
-          </div>
-          <div class="form-control">
-            <label for="last-name" class="lavel_registro">Apellido </label>
-            <input type="text" name="last-name" required id="last-name" />
-          </div>
+          <h2 class="titulo_registro">Ingrese al sitio</h2>
+
+          <!--CAMPOS PARA VALIDAR USUARIO-->
           <div class="form-control">
             <label for="email" class="lavel_registro">Email</label>
             <input type="email" name="email" required id="email" />
@@ -55,41 +51,8 @@
             <label for="passw" class="lavel_registro">Contraseña</label>
             <input type="password" name="passw" required id="passw" />
           </div>
-          <div class="form-control">
-            <label for="date" class="lavel_registro">Fecha de nacimiento</label>
-            <input type="date" name="date" required id="date" />
-          </div>
-          <div class="form-control">
-            <label for="country" class="lavel_registro"
-              >Selecione su país de origen</label
-            >
-            <select name="country" id="country" class="form-select">
-              <option value="">País</option>
-              <option value="AR">Argentina</option>
-              <option value="BO">Bolivia</option>
-              <option value="BR">Brasil</option>
-              <option value="CH">Chile</option>
-              <option value="CO">Colombia</option>
-              <option value="EC">Ecuador</option>
-              <option value="PY">Paraguay</option>
-              <option value="PE">Perú</option>
-              <option value="UY">Uruguay</option>
-              <option value="VE">Venezuela</option>
-            </select>
-          </div>
-          <!--CHECkBOX-->
-          <div class="form-terms">
-            <div class="terms">
-              <input type="checkbox" class="check" id="terms" />
-              <label class="texto_check" for="terminos"
-                >Acepto términos y condiciones</label
-              >
-            </div>
-          </div>
-
           <!--BOTON DE ACCIÓN-->
-          <button type="submit" class="boton">Registrate</button>
-          <button type="reset" class="boton">Borrar todo</button>
+          <button type="submit" class="boton_login">Ingresar</button>
 
           <!--ZONA DE AYUDA-->
           <div class="ayuda_form">
