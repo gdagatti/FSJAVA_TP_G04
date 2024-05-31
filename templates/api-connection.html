@@ -6,7 +6,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/style_register.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 
     <title>TP Grupo 4</title>
@@ -26,51 +26,68 @@
     ></script>
   </head>
 
-  <body class="body_login">
-    <header class="header_registro">
-      <nav class="navbar_registro">
-        <a clas="logo_registro" href="../index.html">
-          <i class="fa-solid fa-book"></i>
-          <span> CAC-Libros</span>
-        </a>
+  <body class="">
+    <!-- Encabezado -->
+    <header class="header">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div id="logo">
+          <a href="/">
+            <i class="fa-solid fa-book"></i>
+            <span class="logo-text">CAC - Libros</span>
+          </a>
+        </div>
+
+        <!-- hipervínculos del menú -->
+        <ul class="nav-links">
+          <li><a href="#popular">Tendencias</a></li>
+          <li>
+            <a href="./register.html" class="btn-cac">Registrarse</a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+              <!-- <i class="fas fa-sign-in-alt"></i> -->
+              <i class="fas fa-sign-in-alt"></i>
+              <span class="login-text">Iniciar Sesión</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
+    <main style="margin-top: 25px">
+      <h2 style="text-align: center">
+        Seccion para mostrar la coneccion con la API de Rick and Morty
+      </h2>
 
-    <main id="main" class="main">
-      <section class="login" id="form-wrapper">
-        <!-- FORMULARIO-->
-        <form action="#" method="POST" novalidate id="form_registro">
-          <h2 class="titulo_registro">Ingrese al sitio</h2>
-
-          <!--CAMPOS PARA VALIDAR USUARIO-->
-          <div class="form-control">
-            <label for="email" class="lavel_registro">Email</label>
-            <input type="email" name="email" required id="email" />
-          </div>
-          <div class="form-control">
-            <label for="passw" class="lavel_registro">Contraseña</label>
-            <input type="password" name="passw" required id="passw" />
-          </div>
-          <!--BOTON DE ACCIÓN-->
-          <button type="submit" class="boton_login">Ingresar</button>
-
-          <!--ZONA DE AYUDA-->
-          <div class="ayuda_form">
-            <a href="#">¿Necesitas ayuda?</a>
-          </div>
-        </form>
+      <section
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: 15px 0;
+        "
+        id="characters-section"
+      >
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            gap: 15px;
+          "
+          id="characters-cards"
+        ></div>
+        <div>
+          <button id="prev">Anterior</button>
+          <button id="next">Siguiente</button>
+        </div>
       </section>
     </main>
-    <footer>
-      <br /><br />
-      <a href="#" class="footer-link">Términos y condiciones</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="#" class="footer-link">Preguntas frecuentes</a
-      >&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="#" class="footer-link">Ayuda</a>&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="#" class="footer-link">Administrador de Libros</a>
-      <br /><br />
-    </footer>
-    <!-- este codigo genera espacios en blanco para generar una separación=> &nbsp; -->
+
+    <script src="../static/javascript/api-connection.js"></script>
   </body>
 </html>
