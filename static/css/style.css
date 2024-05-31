@@ -287,3 +287,11 @@ footer {
     width: 200;
   }
 }
+
+.pages-button {
+  padding: 8px;
+  background-color: var(--bg-secondary-color);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}

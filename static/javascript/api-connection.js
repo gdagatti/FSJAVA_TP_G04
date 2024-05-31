@@ -1,4 +1,3 @@
-let characters = [];
 let pages = {
   actual: 1,
   prev: false,
@@ -8,6 +7,10 @@ let pages = {
 
 // div para contener las cards
 let charactersCards = document.getElementById("characters-cards");
+
+let actualPageText = document.getElementById("pages-counter");
+console.log(actualPageText);
+actualPageText.innerHTML = `Pagina ${pages.actual} de ${pages.maxPage}`;
 
 const createCharacterCards = (character) => {
   let characterCard = document.createElement("article");
@@ -26,10 +29,23 @@ const createCharacterCards = (character) => {
   characterCard.appendChild(img);
   characterCard.appendChild(name);
 
-  charactersCards.appendChild(characterCard);
+  return characterCard;
+};
+
+const showCards = (cards) => {
+  while (charactersCards.hasChildNodes()) {
+    charactersCards.removeChild(charactersCards.firstChild);
+  }
+
+  cards.forEach((character) => {
+    charactersCards.appendChild(character);
+  });
 };
 
 const getCharacters = async () => {
+  let characters = [];
+  let cards = [];
+
   await fetch(`https://rickandmortyapi.com/api/character/?page=${pages.actual}`)
     .then((data) => data.json())
     .then((data) => {
@@ -50,9 +66,14 @@ const getCharacters = async () => {
     .catch((err) => console.log(err));
 
   characters.forEach((character) => {
-    console.log(character);
-    createCharacterCards(character);
+    // console.log(character);
+
+    cards.push(createCharacterCards(character)); //genera articles
   });
+
+  showCards(cards);
+
+  actualPageText.innerHTML = `Pagina ${pages.actual} de ${pages.maxPage}`;
 };
 
 getCharacters();
@@ -71,6 +92,8 @@ prevButton.addEventListener("click", () => {
   }
   nextButton.disabled = pages.actual <= pages.maxPage ? false : true;
   prevButton.disabled = pages.actual > 1 ? false : true;
+
+  actualPageText.innerHTML = `Pagina ${pages.actual} de ${pages.maxPage}`;
 });
 nextButton.addEventListener("click", () => {
   if (pages.next) {
@@ -79,7 +102,9 @@ nextButton.addEventListener("click", () => {
   }
 
   prevButton.disabled = pages.actual > 1 ? false : true;
-  nextButton.disabled = pages.actual <= pages.maxPage ? false : true;
+  nextButton.disabled = pages.actual == pages.maxPage ? true : false;
+
+  actualPageText.innerHTML = `Pagina ${pages.actual} de ${pages.maxPage}`;
 });
 
 // charactersSection.appendChild(prevButton);
