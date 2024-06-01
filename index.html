@@ -24,8 +24,8 @@
   </head>
   <body>
     <!-- Encabezado -->
-    <header class="header">
-      <nav class="navbar">
+    <header class="header" style="display: flex; flex-wrap: wrap">
+      <nav class="navbar" style="width: 100%">
         <!-- Logo -->
         <div id="logo">
           <a href="/">
@@ -39,7 +39,7 @@
           <li>
             <a href="./templates/api-connection.html">Integracion de API</a>
           </li>
-          <li><a href="./index.html#popular">Tendencias</a></li>
+          <li><a href="../../index.html#popular">Tendencias</a></li>
           <li>
             <a href="./templates/register.html" class="btn-cac">Registrarse</a>
           </li>
@@ -53,7 +53,32 @@
             </a>
           </li>
         </ul>
+        <button id="responsive-button">
+          <i
+            class="fas fa-solid fa-bars"
+            style="color: white; padding: 10px"
+          ></i>
+        </button>
       </nav>
+
+      <ul class="" id="nav-links-responsive">
+        <li>
+          <a href="./templates/api-connection.html">Integracion de API</a>
+        </li>
+        <li><a href="../../index.html#popular">Tendencias</a></li>
+        <li>
+          <a href="./templates/register.html" class="btn-cac">Registrarse</a>
+        </li>
+        <li>
+          <a href="./templates/login.html">
+            <!-- Más adelante se aplicará estilo especifico
+                      al texto y se agregará un ícono -->
+            <!-- <i class="fas fa-sign-in-alt"></i> -->
+            <i class="fas fa-sign-in-alt"></i>
+            <span class="login-text">Iniciar Sesión</span>
+          </a>
+        </li>
+      </ul>
     </header>
 
     <!-- Contenido -->
@@ -422,5 +447,8 @@
       <a href="" class="footer-link">Preguntas Frecuentes</a>
       <a href="" class="footer-link">Ayuda</a>
     </footer>
+
+    <!-- scripts -->
+    <script src="../static/javascript/index.js"></script>
   </body>
 </html>

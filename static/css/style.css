@@ -295,3 +295,58 @@ footer {
   border-radius: 25px;
   cursor: pointer;
 }
+
+#responsive-button {
+  display: none;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--bg-secondary-color);
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none !important;
+  }
+
+  #responsive-button {
+    display: flex;
+  }
+
+  #nav-links-responsive {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  #nav-links-responsive > li {
+    margin: 5px 0;
+  }
+
+  #nav-links-responsive > li > a {
+    padding: 5px;
+  }
+
+  #nav-links-responsive > li > a:hover {
+    background-color: #675346;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 641px) {
+  #nav-links-responsive {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1920px) {
+}
