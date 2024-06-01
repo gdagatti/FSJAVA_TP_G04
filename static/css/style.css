@@ -339,6 +339,7 @@ footer {
   }
 }
 
+/* setea el valor a none para que no aparezca nada resposive por encima de los 640px */
 @media (min-width: 641px) {
   #nav-links-responsive {
     display: none !important;
