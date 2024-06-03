@@ -95,7 +95,7 @@ body {
   background-image: url(../img/imagenfondo.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 40rem;
   box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
 }
 
@@ -174,7 +174,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  height: 100vh;
+  height: 100%;
   text-align: center;
 }
 
@@ -202,7 +202,7 @@ nav ul li a:hover {
 }
 
 .input-search {
-  width: 400px;
+  width: 22rem;
   background-color: var(--bg-secondary-color);
   border: none;
   padding: 10px;
@@ -245,7 +245,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   height: 50px;
 }
 
@@ -272,14 +272,18 @@ footer {
   .container {
     flex-direction: column;
   }
+
   .movie-item {
     height: auto;
     width: 50%;
   }
+
+  #search {
+    margin-top: 4rem;
+  }
 }
 
 /* desde 601px hasta 935px */
-
 @media only screen and (min-width: 601px) and (max-width: 935px) {
   .movie-item {
     display: flex;
@@ -337,6 +341,21 @@ footer {
     background-color: #675346;
     border-radius: 20px;
   }
+
+  #list-top-rated {
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 24rem;
+  }
+  #list-top-rated > div {
+    margin: auto;
+  }
+
+  #footer > .footer-link {
+    max-width: 7rem;
+    gap: 10px;
+  }
 }
 
 /* setea el valor a none para que no aparezca nada resposive por encima de los 640px */
@@ -346,8 +365,8 @@ footer {
   }
 }
 
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
 }
 
 @media (max-width: 1920px) {
-}
+} */
