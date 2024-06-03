@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <title>TP Grupo 4</title>
+
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- vinculación fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/0501813ee5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header class="header" style="display: flex; flex-wrap: wrap">
+      <nav class="navbar" style="width: 100%">
+        <!-- Logo -->
+        <div id="logo">
+          <a href="../index.html">
+            <i class="fa-solid fa-book"></i>
+            <span class="logo-text">CAC - Libros</span>
+          </a>
+        </div>
+
+        <!-- hipervínculos del menú -->
+        <ul class="nav-links">
+          <li>
+            <a href="./api-connection.html">Integracion de API</a>
+          </li>
+          <li><a href="../index.html#popular">Tendencias</a></li>
+          <li>
+            <a href="../index.html">
+              <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+              <!-- <i class="fas fa-sign-in-alt"></i> -->
+              <i class="fas fa-sign-in-alt"></i>
+              <span class="login-text">Salir</span>
+            </a>
+          </li>
+        </ul>
+        <button id="responsive-button">
+          <i
+            class="fas fa-solid fa-bars"
+            style="color: white; padding: 10px"
+          ></i>
+        </button>
+      </nav>
+
+      <ul class="" id="nav-links-responsive">
+        <li>
+          <a href="./api-connection.html">Integracion de API</a>
+        </li>
+        <li><a href="../index.html#popular">Tendencias</a></li>
+        <li>
+          <a href="./templates/register.html" class="btn-cac">Registrarse</a>
+        </li>
+        <li>
+          <a href="./templates/login.html">
+            <!-- Más adelante se aplicará estilo especifico
+                      al texto y se agregará un ícono -->
+            <!-- <i class="fas fa-sign-in-alt"></i> -->
+            <i class="fas fa-sign-in-alt"></i>
+            <span class="login-text">Iniciar Sesión</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Contenido -->
+    <main id="index-main">
+      <!-- banner: una sección prominente en la 
+            parte superior de una página que puede
+            contener información destacada, como anuncios,
+            mensajes importantes, o un diseño gráfico distintivo. -->
+      <section id="banner" class="d-flex">
+        <div class="card-banner banner-container">
+          <h1>
+          TE DAMOS LA BIENVENIDA A TU SESSION PRIVADA<br />
+          te hechamos mucho de menos!!!
+          </h1>
+          <h2>
+            Aquí están todos tus libros<br />
+            Leelos donde y como quieras!
+          </h2>
+        </div>
+      </section>
+
+      <!-- search: sección que contiene un mensaje de búsqueda
+            y un campo de entrada de texto para que los usuarios
+            ingresen lo que desean buscar en un sitio web
+            -->
+      <section id="search" class="container">
+        <h2 class="search-title">¿Qué estas buscando leer?</h2>
+        <input type="text" class="input-search" placeholder="Buscar..." />
+      </section>
+
+      <div style="border: 1px solid #fff; margin: 2em"></div>
+
+      <!-- popular: mostrar imágenes de las peliculas
+            con tendencia hoy -->
+      <section id="popular">
+        <!-- División contenedora del titulo
+                e imagenes -->
+        <div class="container movies-grid">
+          <h2>Que quieres leer hoy</h2>
+
+          <div id="list-popular" class="container-group">
+            <!-- División que mostrará imagen y detalle de la pelicula, mismo 
+                    formato para todas las peliculas -->
+            <!-- pelicula 01 -->
+            <div class="movie-item">
+              <a href="../detail-movie.html" class="movie-item">
+                <img
+                  src="../static/img/imagen1.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">LA PROMESA (PECADO 1)</p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Laura Restrepo
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 02 -->
+            <div class="movie-item">
+              <a href="../templates/detail-movie.html" class="movie-item">
+                <img
+                  src="../static/img/imagen2.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">LA GRAN NEVADA</p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Centeno Holden
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 03 -->
+            <div class="movie-item">
+              <a href="../templates/detail-movie.html" class="movie-item">
+                <img
+                  src="../static/img/imagen3.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">A PASO LENTO</p>
+                  <p class="movie-item-detail-subtitle">
+                    Autor: Igor de Amicis
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- pelicula 04 -->
+            <div class="movie-item">
+              <a href="../templates/detail-movie.html" class="movie-item">
+                <img
+                  src="../static/img/imagen4.jpg"
+                  alt=""
+                  class="movie-item-img"
+                />
+
+                <div class="movie-item-detail">
+                  <p class="movie-item-detail-title">
+                    ENCUÉNTRAME (UN PUÑADO DE ESPERANZAS 2 - ENTREGA 1)
+                  </p>
+                  <p class="movie-item-detail-subtitle">Autor: Irene Mendoza</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- top-rated: mostrar las películas más aclamadas-->
+      <section id="top-rated">
+        <!-- División contenedora del titulo
+                e imagenes -->
+        
+      </section>
+    </main>
+
+    <footer id="footer">
+      <a href="#" class="footer-link">Términos y condiciones</a>
+      <a href="#" class="footer-link">Preguntas Frecuentes</a>
+      <a href="#" class="footer-link">Ayuda</a>
+      <a href="./templates/contact-form.html" class="footer-link"
+        >Contactanos</a
+      >
+    </footer>
+
+    <!-- scripts -->
+    <script src="./static/javascript/index.js"></script>
+  </body>
+</html>
