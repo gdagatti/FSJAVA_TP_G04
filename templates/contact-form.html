@@ -38,7 +38,7 @@
       <section class="login" id="form-wrapper">
         <!-- FORMULARIO-->
         <form action="#" method="POST" novalidate id="form_registro">
-          <h2 class="titulo_registro">Ingrese al sitio</h2>
+          <h2 class="titulo_registro">Contactanos</h2>
 
           <!--CAMPOS PARA VALIDAR USUARIO-->
           <div class="form-control">
@@ -46,11 +46,26 @@
             <input type="email" name="email" required id="email" />
           </div>
           <div class="form-control">
-            <label for="passw" class="lavel_registro">Contraseña</label>
-            <input type="password" name="passw" required id="passw" />
+            <label for="reason" class="lavel_registro">Motivo</label>
+            <input type="text" name="reason" required id="reason" />
           </div>
+          <div class="form-control">
+            <label for="message" class="lavel_registro">Mensaje</label>
+            <textarea
+              name="message"
+              rows="10"
+              cols="40"
+              style="border-radius: 0; min-height: 1.5em"
+              id="message"
+            >
+Escribe un mensaje</textarea
+            >
+          </div>
+
           <!--BOTON DE ACCIÓN-->
-          <button type="submit" class="boton_login">Ingresar</button>
+          <button type="submit" class="boton_login" id="submit-contact">
+            Enviar
+          </button>
 
           <!--ZONA DE AYUDA-->
           <div class="ayuda_form">

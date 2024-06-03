@@ -9,7 +9,8 @@ let pages = {
 let charactersCards = document.getElementById("characters-cards");
 
 let actualPageText = document.getElementById("pages-counter");
-console.log(actualPageText);
+actualPageText.style.color = "white";
+actualPageText.style.alignContent = "center";
 actualPageText.innerHTML = `Pagina ${pages.actual} de ${pages.maxPage}`;
 
 const createCharacterCards = (character) => {
@@ -19,8 +20,9 @@ const createCharacterCards = (character) => {
   let img = document.createElement("img");
   img.src = character.image;
 
-  let name = document.createElement("h5");
+  let name = document.createElement("h4");
   name.innerHTML = character.name;
+  name.style.color = "white";
 
   // style
   characterCard.style.textAlign = "center";

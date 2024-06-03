@@ -83,7 +83,8 @@ a {
 }
 
 input:not(.check, .boton),
-select {
+select,
+#message {
   width: 100%;
   margin-bottom: 10px;
   height: 40px;
@@ -106,7 +107,8 @@ select {
   margin-bottom: 10px;
 }
 
-.lavel_registro {
+.lavel_registro,
+#message {
   text-decoration: none;
   color: var(--white-color);
   font-family: var(--primary-font);
